@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CrossFine</title>
+</head>
+<body>
+<script>
+    function account(str) {
+        regexp = /^[a-z0-9]{6,}/;
+        if(regexp.test(str)){
+            return true;
+        }
+        return false;
+    }
+    var acc = 'mychelsea';
+    console.log(account(acc));
+    acc = 'mu9523';
+    console.log(account(acc));
+</script>
+</body>
+</html>
